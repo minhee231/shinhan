@@ -36,14 +36,6 @@ export default {
     overflow-y: auto; /* 내용이 많을 경우 스크롤을 생성 */
   }
 
-  /* FooterMenu를 화면 하단에 고정 */
-  FooterMenu {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: #0046FF; /* 푸터 메뉴 색상 */
-    z-index: 999; /* 다른 요소들 위에 표시되도록 설정 */
-  }
+
   
 </style>
