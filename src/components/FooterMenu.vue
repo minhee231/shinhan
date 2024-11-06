@@ -21,14 +21,17 @@
     }
   </script>
   
-
-<style>
-
-.footer-custom {
-  background-color: #0046FF;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-}
-
-</style>
+  <style scoped>
+  .footer-custom {
+    position: fixed; /* 화면 하단에 고정 */
+    bottom: 0; /* 화면 맨 아래에 위치 */
+    left: 0;
+    width: 100%; /* 전체 너비 */
+    background-color: #0046FF;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    z-index: 999; /* 다른 요소들 위에 표시되도록 설정 */
+  }
+  </style>
+  

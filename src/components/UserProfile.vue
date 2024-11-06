@@ -1,0 +1,39 @@
+<template>
+    <v-expansion-panels class="pa-4" variant="popout">
+      <v-expansion-panel v-for="(message, i) in messages" :key="i" hide-actions>
+        <v-expansion-panel-title>
+          <v-avatar size="36px">
+            <v-img
+              v-if="message.avatar"
+              alt="Avatar"
+              src="https://avatars0.githubusercontent.com/u/9064066?v=4&s=460"
+            ></v-img>
+            <v-icon
+              v-else
+              :color="message.color"
+              :icon="message.icon"
+            ></v-icon>
+          </v-avatar>
+        </v-expansion-panel-title>
+  
+        <v-expansion-panel-text>
+          <v-card-text v-text="lorem"></v-card-text>
+        </v-expansion-panel-text>
+      </v-expansion-panel>
+    </v-expansion-panels>
+  </template>
+  
+  <script>
+    export default {
+      data: () => ({
+        messages: [
+          {
+            avatar: 'https://avatars0.githubusercontent.com/u/9064066?v=4&s=460',
+          },
+        ],
+        lorem:
+          'Lorem ipsum dolor sit amet, at aliquam vivendum vel, everti delicatissimi cu eos. Dico iuvaret debitis mel an, et cum zril menandri. Eum in consul legimus accusam. Ea dico abhorreant duo, quo illum minimum incorrupte no, nostro voluptaria sea eu. Suas eligendi ius at, at nemore equidem est. Sed in error hendrerit, in consul constituam cum.',
+      }),
+    }
+  </script>
+  
