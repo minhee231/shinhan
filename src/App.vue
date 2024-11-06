@@ -4,6 +4,7 @@
       <div class="">
         <UserProfile/>
         <TotalPortfolio/>
+        <TotalSaveing/>
         <HelloWorld/>
       </div>
       <FooterMenu />
@@ -16,6 +17,7 @@ import HelloWorld from './components/HelloWorld.vue'
 import FooterMenu from './components/FooterMenu.vue';
 import UserProfile from './components/UserProfile.vue';
 import TotalPortfolio from './components/TotalPortfolio.vue';
+import TotalSaveing from './components/TotalSaveing.vue';
 
 export default {
   name: 'App',
@@ -25,6 +27,7 @@ export default {
     FooterMenu,
     UserProfile,
     TotalPortfolio,
+    TotalSaveing,
   },
 
   data: () => ({}),
