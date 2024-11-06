@@ -1,6 +1,7 @@
 <template>
-    <v-expansion-panels class="pa-4" variant="popout">
-      <v-expansion-panel v-for="(message, i) in filteredMessages" :key="i" hide-actions>
+    <v-expansion-panels class="pa-4 rounded-panels bg-white"  variant="popout">
+      <v-expansion-panel v-for="(message, i) in messages" :key="i" hide-actions class="no-shadow">
+
         <v-expansion-panel-title>
           <v-row align="center" class="spacer" no-gutters>
             <v-col cols="4" md="1" sm="2">
@@ -8,8 +9,9 @@
                 <v-img
                   v-if="message.avatar"
                   alt="Avatar"
-                  src="https://avatars0.githubusercontent.com/u/9064066?v=4&s=460"
-                ></v-img>
+                  src="https://cdn.discordapp.com/attachments/1087473643740745859/1303691752376635403/image0.jpg?ex=672cad0f&is=672b5b8f&hm=01c931cbf4da676d571f68e1e95d412b8f9a6019fb2cf12eb4a41e3d03060f26&"
+                  ></v-img>
+                  <!-- 이미지 수정하셈 -->
                 <v-icon
                   v-else
                   :color="message.color"
@@ -48,6 +50,7 @@
         </v-expansion-panel-title>
   
         <v-expansion-panel-text>
+          <!-- 누르면 보이는 친구~ -->
           <v-card-text v-text="lorem"></v-card-text>
         </v-expansion-panel-text>
       </v-expansion-panel>
@@ -55,42 +58,27 @@
   </template>
   
   <script>
-    export default {
-      data: () => ({
-        messages: [
-          {
-            avatar: 'https://avatars0.githubusercontent.com/u/9064066?v=4&s=460',
-            name: 'John Leider',
-            title: 'Welcome to Vuetify!',
-            excerpt: 'Thank you for joining our community...',
-          },
-          {
-            color: 'red',
-            icon: 'mdi-account-multiple',
-            name: 'Social',
-            new: 1,
-            total: 3,
-            title: 'Twitter',
-          },
-          {
-            color: 'teal',
-            icon: 'mdi-tag',
-            name: 'Promos',
-            new: 2,
-            total: 4,
-            title: 'Shop your way',
-            exceprt: 'New deals available, Join Today',
-          },
-        ],
-        lorem:
-          'Lorem ipsum dolor sit amet, at aliquam vivendum vel, everti delicatissimi cu eos. Dico iuvaret debitis mel an, et cum zril menandri. Eum in consul legimus accusam. Ea dico abhorreant duo, quo illum minimum incorrupte no, nostro voluptaria sea eu. Suas eligendi ius at, at nemore equidem est. Sed in error hendrerit, in consul constituam cum.',
-      }),
-  
-      computed: {
-        filteredMessages() {
-          return this.messages.filter(message => message.name === 'John Leider');
+  export default {
+    data: () => ({
+      messages: [
+        {
+          avatar: 'https://cdn.discordapp.com/attachments/1087473643740745859/1303691752376635403/image0.jpg?ex=672cad0f&is=672b5b8f&hm=01c931cbf4da676d571f68e1e95d412b8f9a6019fb2cf12eb4a41e3d03060f26&',
+          name: '성유영',
+          title: 'Gold1',
+          excerpt: 'Thank you for joining our community...',
         }
-      }
-    }
-  </script>
-  
+      ],
+      lorem:
+        '설명?',
+    }),
+  }
+</script>
+
+<style scoped>
+.bg-white {
+  background-color: white !important;
+}
+.no-shadow {
+  box-shadow: none !important;
+}
+</style>
