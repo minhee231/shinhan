@@ -1,5 +1,5 @@
 <template>
-    <v-footer class="bg-indigo-lighten-1 text-center d-flex flex-column">
+    <v-footer class="footer-custom text-center d-flex flex-column">
       <div>
         <v-btn
           v-for="icon in icons"
@@ -7,6 +7,7 @@
           :icon="icon"
           class="mx-4"
           variant="text"
+          color="white"
         ></v-btn>
       </div>
     </v-footer>
@@ -20,3 +21,14 @@
     }
   </script>
   
+
+<style>
+
+.footer-custom {
+  background-color: #0046FF;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+</style>
