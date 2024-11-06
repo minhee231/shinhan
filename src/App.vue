@@ -5,7 +5,7 @@
         <UserProfile/>
         <TotalPortfolio/>
         <TotalSaveing/>
-        <HelloWorld/>
+        <Statistics/>
       </div>
       <FooterMenu />
     </v-main>
@@ -18,6 +18,7 @@ import FooterMenu from './components/FooterMenu.vue';
 import UserProfile from './components/UserProfile.vue';
 import TotalPortfolio from './components/TotalPortfolio.vue';
 import TotalSaveing from './components/TotalSaveing.vue';
+import Statistics from './components/Statistics.vue';
 
 export default {
   name: 'App',
@@ -28,6 +29,7 @@ export default {
     UserProfile,
     TotalPortfolio,
     TotalSaveing,
+    Statistics,
   },
 
   data: () => ({}),
