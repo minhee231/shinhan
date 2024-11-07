@@ -9,7 +9,7 @@
                 <v-img
                   v-if="message.avatar"
                   alt="Avatar"
-                  src="https://cdn.discordapp.com/attachments/1087473643740745859/1303691752376635403/image0.jpg?ex=672cad0f&is=672b5b8f&hm=01c931cbf4da676d571f68e1e95d412b8f9a6019fb2cf12eb4a41e3d03060f26&"
+                  src="https://imgur.com/2D8w6X3.png"
                   ></v-img>
                   <!-- 이미지 수정하셈 -->
                 <v-icon
