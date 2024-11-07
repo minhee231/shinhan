@@ -14,7 +14,7 @@
         <v-col class="text-center">
             <v-icon color="green" small>mdi-arrow-up</v-icon>
             <span class="text-success font-weight-bold ml-1">2.36%</span>
-            <div class="text-h5 font-weight-bold text-white">30,00,000 ₩</div>
+            <div class="text-h5 font-weight-bold text-white">30,401,490 ₩</div>
         </v-col>
     <v-card-text class="d-flex align-center">
       <v-container class="pa-0">

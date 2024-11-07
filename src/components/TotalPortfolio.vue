@@ -22,7 +22,7 @@
             <v-col class="text-center">
               <v-icon color="green" small>mdi-arrow-up</v-icon>
               <span class="text-body-2 font-weight-bold text-white">수익</span>
-              <div class="text-h6 font-weight-bold text-white">30,00,000 ₩</div>
+              <div class="text-h6 font-weight-bold text-white">30,401,490 ₩</div>
             </v-col>
 
             <v-divider vertical></v-divider>
@@ -32,7 +32,7 @@
             <v-col class="text-center">
               <v-icon color="red" small>mdi-arrow-down</v-icon>
               <span class="text-body-2 font-weight-bold text-white">투자</span>
-              <div class="text-h6 font-weight-bold text-white">20,000,00 ₩</div>
+              <div class="text-h6 font-weight-bold text-white">27,000,000 ₩</div>
             </v-col>
           </v-row>
         </v-card>
