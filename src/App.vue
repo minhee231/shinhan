@@ -1,11 +1,13 @@
 <template>
   <v-app>
     <v-main>
+      <!-- 성 유 영 님! 저한테 정말 그러시면 안되는거죠~<br>
+      아니 어떻게 제출 하루전에 프론트를 짜라고 하실 수 있어요~!~! -->
       <div class="">
         <UserProfile/>
         <TotalPortfolio/>
         <TotalSaveing/>
-        <Statistics/>
+        <TotalRanking/>
       </div>
       <FooterMenu />
     </v-main>
@@ -17,7 +19,7 @@ import FooterMenu from './components/FooterMenu.vue';
 import UserProfile from './components/UserProfile.vue';
 import TotalPortfolio from './components/TotalPortfolio.vue';
 import TotalSaveing from './components/TotalSaveing.vue';
-import Statistics from './components/Statistics.vue';
+import TotalRanking from './components/TotalRanking.vue';
 
 export default {
   name: 'App',
@@ -27,7 +29,7 @@ export default {
     UserProfile,
     TotalPortfolio,
     TotalSaveing,
-    Statistics,
+    TotalRanking,
   },
 
   data: () => ({}),
