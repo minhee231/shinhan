@@ -16,7 +16,7 @@
 <script>
     export default {
       data: () => ({
-        icons: ['mdi-home', 'mdi-share', 'mdi-credit-card-outline', 'mdi-chart-line'],
+        icons: ['mdi-home', 'mdi-calendar-question', 'mdi-credit-card-outline', 'mdi-chart-line'],
       }),
     }
   </script>
