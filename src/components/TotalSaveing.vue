@@ -6,16 +6,15 @@
     <v-card-title>
         <span class="text-subtitle-1 font-weight-bold  text-white">자산</span>
       <v-spacer></v-spacer>
-      <v-chip color="green lighten-4" text-color="green darken-1" class="ml-2">
-        <v-icon left>mdi-arrow-up</v-icon>
-        2.36%
-      </v-chip>
+      
     </v-card-title>
     <!-- <v-card-subtitle class="text-h5 font-weight-bold text-white" style="color: white;">
       USD 5,000.00
     </v-card-subtitle> -->
         <v-col class="text-center">
-            <div class="text-h6 font-weight-bold text-white">30,00,000 ₩</div>
+            <v-icon color="green" small>mdi-arrow-up</v-icon>
+            <span class="text-success font-weight-bold ml-1">2.36%</span>
+            <div class="text-h5 font-weight-bold text-white">30,00,000 ₩</div>
         </v-col>
     <v-card-text class="d-flex align-center">
       <v-container class="pa-0">
