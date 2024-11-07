@@ -1,19 +1,22 @@
 <template>
 <v-expansion-panels class="pa-4 rounded-panels bg-white"  variant="popout">
     <v-container class="fill-height" fluid>
-    <v-row class="justify-center align-center">
-        <v-card class="pa-4" outlined>
+    <v-row class="justify-center align-center ">
+    <v-card class="pa-4 container-custom portfolio-card rounded-xl" outlined>
     <v-card-title>
-      Total Savings
+        <span class="text-subtitle-1 font-weight-bold  text-white">자산</span>
       <v-spacer></v-spacer>
       <v-chip color="green lighten-4" text-color="green darken-1" class="ml-2">
         <v-icon left>mdi-arrow-up</v-icon>
         2.36%
       </v-chip>
     </v-card-title>
-    <v-card-subtitle class="text-h5 font-weight-bold">
+    <!-- <v-card-subtitle class="text-h5 font-weight-bold text-white" style="color: white;">
       USD 5,000.00
-    </v-card-subtitle>
+    </v-card-subtitle> -->
+        <v-col class="text-center">
+            <div class="text-h6 font-weight-bold text-white">30,00,000 ₩</div>
+        </v-col>
     <v-card-text class="d-flex align-center">
       <v-container class="pa-0">
         <v-row class="fill-height align-center">
@@ -34,14 +37,18 @@
   
   <script>
   export default {
-    name: "PortfolioCard",
+    name: "TotalSaving",
   };
   </script>
-  
-  <style scoped>
-  .portfolio-card {
-    max-width: 320px;
-    text-align: center; /* 전체 카드 내의 텍스트를 중앙 정렬 */
-  }
-  </style>
-  
+
+<style scoped>
+
+.portfolio-card {
+    min-width: 330px;
+    text-align: center;
+}
+
+.container-custom {
+    background-color: #517FF5;
+}
+</style>
