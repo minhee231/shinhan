@@ -5,7 +5,7 @@
           v-for="icon in icons"
           :key="icon"
           :icon="icon"
-          class="mx-4"
+          class="mx-5"
           variant="text"
           color="white"
         ></v-btn>
@@ -13,25 +13,25 @@
     </v-footer>
   </template>
   
-  <script>
+<script>
     export default {
       data: () => ({
-        icons: ['mdi-facebook', 'mdi-twitter', 'mdi-linkedin', 'mdi-instagram'],
+        icons: ['mdi-home', 'mdi-share', 'mdi-credit-card-outline', 'mdi-chart-line'],
       }),
     }
   </script>
   
   <style scoped>
   .footer-custom {
-    position: fixed; /* 화면 하단에 고정 */
-    bottom: 0; /* 화면 맨 아래에 위치 */
+    position: fixed;
+    bottom: 0;
     left: 0;
-    width: 100%; /* 전체 너비 */
+    width: 100%;
     background-color: #0046FF;
     text-align: center;
     display: flex;
     flex-direction: column;
-    z-index: 999; /* 다른 요소들 위에 표시되도록 설정 */
+    z-index: 999;
   }
   </style>
   
