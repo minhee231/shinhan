@@ -1,6 +1,6 @@
 <template>
     <v-expansion-panels class="pa-4 rounded-panels bg-white"  variant="popout">
-      <v-expansion-panel v-for="(message, i) in messages" :key="i" hide-actions class="no-shadow">
+      <v-expansion-panel v-for="(message, i) in messages" :key="i" hide-actions class="no-shadow rounded-xl">
 
         <v-expansion-panel-title>
           <v-row align="center" class="spacer" no-gutters>
